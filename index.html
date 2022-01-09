@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscadorCEP</title>
+    <style>
+      #title{
+        font-size: 30px;
+        }    
+        #body{
+          background-image: url('D_NQ_NP_988359-MLB43134979894_082020-O.jpg');
+          background-size: 100%;
+          text-align:center; 
+          margin-top: 250px;
+        }
+        div{
+            font-family:Oswald; 
+        }
+        #button{width: 110px;
+                height: 45px;
+                background-color: #7B68EE	;
+                border: 0px none;
+                border-radius: 10px;
+                color: white;
+                font-weight: bold;
+                outline: 0; 
+                }
+        ::placeholder{
+          color:black;
+          font-size:17px;
+          font-family: Oswald;
+          word-spacing: 2px;
+          text-align: center;
+          
+        }
+        #barcode{
+          background: transparent;
+          border-top: unset;
+          border-left: unset;
+          border-right: unset;
+          border-radius: none;
+          width: 250px;
+          height: 35px;
+          outline: none;
+          border-bottom-color:black;
+          background-color: none;
+        }
+
+
+
+    </style>
+  </head>
+  <body id='body'>
+        <div id='CEP'>
+        <heater id='title'><h1>Busca CEP</h1></heater>
+            <section>
+             <label for='CEP'></label>
+             <input type='text' name='CEP' placeholder="Digite o CEP aqui" id='barcode'><br><br>
+             <input type=submit value='enviar'id='button'>    
+            </section>
+            <main>
+               <div class='btn-toolbar' id='btn-toolbar'>
+                
+
+               </div>
+            </main>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src='mainscript.js'></script>
+        
+  </body>
+</html>
